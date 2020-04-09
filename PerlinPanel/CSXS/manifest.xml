@@ -7,14 +7,14 @@ ExtensionBundleVersion = version del bundle
 -->
 <ExtensionManifest
   Version="9.0"
-  ExtensionBundleId="com.example.helloworld"
+  ExtensionBundleId="com.fenikkel.perlinexample"
   ExtensionBundleVersion="1.0.0"
-  ExtensionBundleName="Hello World"
+  ExtensionBundleName="Perlin noise"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <ExtensionList>
     <!-- Extension Id = id unica para la extension. Le anyadimos .panel1 o .panel para distinguirlo de extensionbundleid-->
-    <Extension Id="com.example.helloworld.panel" Version="1.0" />
+    <Extension Id="com.fenikkel.perlinexample.panel" Version="1.0" />
   </ExtensionList>
 
   <ExecutionEnvironment>
@@ -36,7 +36,7 @@ ExtensionBundleVersion = version del bundle
 
   <DispatchInfoList>
 
-    <Extension Id="com.example.helloworld.panel">
+    <Extension Id="com.fenikkel.perlinexample.panel">
       <DispatchInfo >
         <!-- Si tubieramos un bundle de varios paneles para varios programas (photoshop y premiere por ejemplo), tendiamos que especificar una host list -->
         <Resources>
@@ -51,20 +51,20 @@ ExtensionBundleVersion = version del bundle
         <UI>
 
           <Type>Panel</Type>
-          <Menu>Hello World!</Menu>
+          <Menu>Perlin example</Menu>
 
           <Geometry> <!--  sets the default (required), max and min (optional) size of the panel  -->
             <Size>
-              <Height>600</Height>
-              <Width>800</Width>
+              <Height>720</Height>
+              <Width>1024</Width>
             </Size>
             <MinSize>
-              <Height>100</Height>
-              <Width>150</Width>
+              <Height>400</Height>
+              <Width>578</Width>
             </MinSize>
             <MaxSize>
-              <Height>1000</Height>
-              <Width>1000</Width>
+              <Height>1127</Height>
+              <Width>1600</Width>
             </MaxSize>
           </Geometry>
 
