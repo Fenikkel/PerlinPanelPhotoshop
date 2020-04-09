@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <title>Perlin noise</title>
-<button type="button" id="perlinNoise" >Perlin Noise</button>
-<button type="button" id="perlinCurves">Perlin Curves</button>
-<button type="button" id="perlinCurves2">Perlin Curves 2</button>
+
+<div class="buttonHolder">
+
+  <div > 
+    <button type="button" id="simplexNoise">Simplex Noise</button>
+    <button type="button" id="perlinNoise" >Perlin Noise</button>
+  </div>
+
+  <div > 
+    <button type="button" id="modifyedPerlinNoise" >Modyfied Perlin Noise</button>
+  </div>
+
+  <div >
+    <button type="button" id="perlinCurves">Perlin Curves Hight Noise</button>
+    <button type="button" id="perlinCurves2">Perlin Curves Low Noise</button>
+  </div>
+
+  <div>
+    <button type="button" id="perlinCurves3">Perlin Curves v2 Hight Noise</button>
+    <button type="button" id="perlinCurves4">Perlin Curves v2 Low Noise</button>
+  </div>
+
+</div>
+
+
 
 <style>
+
+.buttonHolder {
+  border: 1px solid black;
+  margin: 50px 0px 0px 0px;
+  background-color: lightblue;
+}
+
 .centerbox {
   /* flexbox, por favor */
   display: -webkit-box;
